@@ -2,7 +2,7 @@ import logoDarkMode from '../assets/dark.png'
 import logoFacebook from '../assets/facebook.png'
 import logoGithub from '../assets/github.png'
 import logoLinkedind from '../assets/linkedin.png'
-import logoRocket from '../assets/rocket.webp'
+import logoRocket from '../assets/rocket1.webp'
 import logoCode from '../assets/code.png'
 import logoConsulting from '../assets/consulting.png'
 import logoDesign from '../assets/design.png'
@@ -22,33 +22,48 @@ export const LandinPage = () => {
         <div className={darkMode ? "dark" :""}>
 
             <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800'>
-                <section>
-                    <nav className='p-10 mb-12 flex justify-between'>
-                        <h1 className='text-2xl font-bold dark:text-white'>App-Demo</h1>
-                        <ul className='flex items-center'>
-                            <li><img onClick={()=>setdarkMode(!darkMode)} className='cursor-pointer' src={logoDarkMode} alt="logo" width={40} height={40}/></li>
-                            <li><Link to="/login" className='bg-gray-600 text-slate-400 px-6 py-2 rounded-full ml-8 hover:bg-gray-900 hover:text-white' href="#">Login</Link></li>
-                        </ul>
-                    </nav>
+            <section className='bg-white dark:bg-gray-800'>
+                <nav className='p-6 flex justify-between items-center'>
+                    <h1 className='text-3xl font-semibold text-teal-600 dark:text-white'>SALUD API</h1>
+                    <ul className='flex items-center gap-6'>
+                        <li>
+                            <img 
+                                onClick={() => setdarkMode(!darkMode)} 
+                                className='cursor-pointer w-8 h-8 transition duration-300 transform hover:scale-110' 
+                                src={logoDarkMode} 
+                                alt="logo dark mode" 
+                            />
+                        </li>
+                    </ul>
+                </nav>
 
-                    <div className='text-center'>
-                        <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Proyect Demo</h2>
-                        <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Scalable and Responsive</h3>
-                        <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero dolore pariatur asperiores voluptatibus sunt optio iste atque animi id odio aliquid sapiente voluptatem, accusantium, ea sed quibusdam a. Itaque.</p>
-                    </div>
+                <div className='text-center pt-16'>
+                    <h2 className='text-5xl font-bold text-teal-600 mb-4 md:text-6xl'>Transforma tu Salud con Tecnología</h2>
+                    <h3 className='text-2xl text-gray-700 dark:text-white mb-6 md:text-3xl font-medium'>
+                        Tu Compañero de Salud Personalizado
+                    </h3>
+                    <p className='text-lg text-gray-700 dark:text-white max-w-2xl mx-auto mb-6 leading-relaxed md:text-xl'>
+                        "Todo lo que necesitas para cuidar de ti, con la comodidad de un solo clic."
+                        <br />
+                        Ya sea que quieras mejorar tu dieta, tus rutinas de ejercicio o dormir mejor, nuestra aplicación te ofrece herramientas fáciles de usar y recomendaciones basadas en tus datos.
+                    </p>
 
-                    <div className='text-5xl flex justify-center gap-16 py-3'>
-                        <img src={logoFacebook} alt="logo-redes" width={50} height={50}  className={'dark:border-2 border-teal-300 rounded-full'}/>
+                    <Link 
+                        to="/login" 
+                        className='bg-teal-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-teal-500 hover:shadow-lg mt-6 inline-block'>
+                        ¡Empieza ahora!
+                    </Link>
+                </div>
 
-                        <img src={logoGithub} alt="logo-redes" width={50} height={50} className={'dark:border-2 border-teal-300 rounded-full'}/>
+                <div className='relative mx-auto mt-12 w-80 h-80 md:w-96 md:h-96 bg-gradient-to-b from-indigo-400 rounded-full overflow-hidden shadow-lg'>
+                    <img 
+                        src={logoRocket} 
+                        alt="logo-rocket" 
+                        className='w-full h-full object-cover transition-all duration-500 transform hover:scale-110'
+                    />
+                </div>
+            </section>
 
-                        <img src={logoLinkedind} alt="logo-redes" width={50} height={50} className={'dark:border-2 border-teal-300 rounded-full'}/>
-                    </div>
-
-                    <div className='relative mx-auto  bg-gradient-to-b from-indigo-400 rounded-full w-80 h-80 mt-12 overflow-hidden md:w-96 md:h-96 dark:border-4 border-teal-300'>
-                        <img src={logoRocket} alt="logo-rocket" />
-                    </div>
-                </section>
 
                 <section>
                     <div>
@@ -87,54 +102,14 @@ export const LandinPage = () => {
                         </div>
                     </div>
                 </section>
+                <div className='text-5xl flex justify-center gap-16 py-3'>
+                        <img src={logoFacebook} alt="logo-redes" width={50} height={50}  className={'dark:border-2 border-teal-300 rounded-full'}/>
 
-                <section>
-                    <div>
-                        <h3 className='text-3xl py-1 dark:text-white'>Proyects</h3>
-                        <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, delectus iure <span className='text-teal-500'>quibusdam</span> quas quaerat itaque, est minima ducimus recusandae illo ipsam numquam nam earum libero <span className='text-teal-500'>deleniti</span> voluptatem! Autem, veniam ut.</p>
-                        <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, delectus iure <span className='text-teal-500'>quibusdam</span> quas quaerat itaque, est minima ducimus recusandae illo ipsam numquam nam earum libero <span className='text-teal-500'>deleniti</span> voluptatem! Autem, veniam ut.</p>
-                    </div>
+                        <img src={logoGithub} alt="logo-redes" width={50} height={50} className={'dark:border-2 border-teal-300 rounded-full'}/>
 
-
-                    <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                        <div className="basis-1/3 flex-1 ">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb1}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb2}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-fill"
-                                src={logoWeb4}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb6}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb5}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1 lg:bg-orange-100">
-                            <img
-                                className="rounded-lg object-cover "
-                                src={logoWeb3}
-                            />
-                        </div>
-                    </div>
-                </section>
+                        <img src={logoLinkedind} alt="logo-redes" width={50} height={50} className={'dark:border-2 border-teal-300 rounded-full'}/>
+                 </div>
+                
 
             </main>
 
