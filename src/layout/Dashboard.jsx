@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Link, Navigate, Outlet, useLocation } from 'react-router-dom'
 import AuthContext from '../context/AuthProvider'
-
+import ChatBot from './ChatBot'
 
 const Dashboard = () => {
     const location = useLocation()
@@ -58,7 +58,7 @@ const Dashboard = () => {
                 <div className='bg-gray-800 h-12'>
                     <p className='text-center  text-slate-100 leading-[2.9rem] underline'>Todos los derechos reservados</p>
                 </div>
-
+                <ChatBot></ChatBot>
             </div>
 
 
