@@ -58,7 +58,6 @@ const Dashboard = () => {
                 <div className='bg-gray-800 h-12'>
                     <p className='text-center  text-slate-100 leading-[2.9rem] underline'>Todos los derechos reservados</p>
                 </div>
-                <ChatBot></ChatBot>
             </div>
 
 

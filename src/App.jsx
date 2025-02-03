@@ -18,6 +18,7 @@ import { PrivateRoute } from './routes/PrivateRoute'
 import Restablecer from './paginas/Restablecer'
 import { TratamientosProvider } from './context/TratamientosProvider'
 import PrivateRouteWithRole from './routes/PrivateRouteWithRole'
+import ChatBot from './layout/ChatBot'
 
 
 
@@ -55,6 +56,7 @@ function App() {
                     <Route path='actualizar/:id' element={<Actualizar />} />
                   </Route>
                 </Routes>
+                <ChatBot></ChatBot>
               </PrivateRoute>
             } />
 
