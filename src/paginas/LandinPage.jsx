@@ -2,7 +2,7 @@ import logoDarkMode from '../assets/dark.png';
 import logoFacebook from '../assets/facebook.png';
 import logoGithub from '../assets/github.png';
 import logoLinkedind from '../assets/linkedin.png';
-import logoRocket from '../assets/rocket1.webp';
+import logoSalud from '../assets/logosalud.webp';
 import logoCode from '../assets/code.png';
 import logoConsulting from '../assets/consulting.png';
 import logoDesign from '../assets/design.png';
@@ -17,12 +17,12 @@ export const LandinPage = () => {
             <main className='bg-[#F5F5F5] px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
                 <section className='bg-[#F5F5F5] px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
                     <nav className='p-6 flex justify-between items-center'>
-                        <h1 className='text-3xl font-semibold text-green-600 dark:text-orange-400'>SALUD API</h1>
+                        <h1 className='text-3xl font-semibold text-green-600 dark:text-orange-400'>SALUDIFY</h1>
                         <ul className='flex items-center gap-6'>
                             <li>
                                 <img 
                                     onClick={() => setDarkMode(!darkMode)} 
-                                    className='cursor-pointer w-8 h-8 transition duration-300 transform hover:scale-110' 
+                                    className='cursor-pointer w-0 h-0 transition duration-300 transform hover:scale-110' 
                                     src={logoDarkMode} 
                                     alt="logo dark mode" 
                                 />
@@ -50,8 +50,8 @@ export const LandinPage = () => {
 
                     <div className='relative mx-auto mt-12 w-80 h-80 md:w-96 md:h-96 bg-gradient-to-b from-green-400 to-green-600 rounded-full overflow-hidden shadow-lg dark:from-orange-300 dark:to-orange-500'>
                         <img 
-                            src={logoRocket} 
-                            alt="logo-rocket" 
+                            src={logoSalud} 
+                            alt="logo-salud" 
                             className='w-full h-full object-cover transition-all duration-500 transform hover:scale-110'
                         />
                     </div>

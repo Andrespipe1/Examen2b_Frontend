@@ -42,7 +42,7 @@ const Login = () => {
 
     return (
         <>
-            <div className="w-1/2 h-screen bg-[url('/public/images/doglogin.jpg')] 
+            <div className="w-1/2 h-screen bg-[url('/public/images/robotlogin.png')] 
             bg-no-repeat bg-cover bg-center sm:block hidden
             ">
             </div>
@@ -51,8 +51,8 @@ const Login = () => {
                 
                 <div className="md:w-4/5 sm:w-full">
                     {Object.keys(mensaje).length>0 && <Mensaje tipo={mensaje.tipo}>{mensaje.respuesta}</Mensaje>}
-                    <h1 className="text-3xl font-semibold mb-2 text-center uppercase  text-gray-500">Welcome back</h1>
-                    <small className="text-gray-400 block my-4 text-sm">Welcome back! Please enter your details</small>
+                    <h1 className="text-3xl font-semibold mb-2 text-center uppercase  text-green-500">Bienvenido</h1>
+                    <small className="text-gray-400 block my-4 text-sm">Bienvenido de nuevo, ingresa tus credenciales</small>
 
 
                     <form onSubmit={handleSubmit}>
@@ -61,26 +61,26 @@ const Login = () => {
                             <input type="email" placeholder="Enter you email" 
                             name='email'
                             value={form.email || ""} onChange={handleChange}
-                            className="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-2 text-gray-500" />
+                            className="block w-full rounded-md border border-gray-300 focus:border-black-700 focus:outline-none focus:ring-1 focus:ring-black-900 py-1 px-2 text-gray-500" />
                         </div>
 
                         <div className="mb-3">
-                            <label className="mb-2 block text-sm font-semibold">Password</label>
+                            <label className="mb-2 block text-sm font-semibold">Contraseña</label>
                             <input type="password" placeholder="********************" 
                             name='password'
                             value={form.password || ""} onChange={handleChange}
-                            className="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-2 text-gray-500" />
+                            className="block w-full rounded-md border border-gray-300 focus:border-black-700 focus:outline-none focus:ring-1 focus:ring-black-700 py-1 px-2 text-gray-500" />
                         </div>
 
                         <div className="my-4">
-                            <button className="py-2 w-full block text-center bg-gray-500 text-slate-300 border rounded-xl hover:scale-100 duration-300 hover:bg-gray-900 hover:text-white">Login</button>
+                            <button className="py-2 w-full block text-center bg-green-600 text-white border rounded-xl hover:scale-100 duration-300 hover:bg-green-700 hover:text-white">Login</button>
                         </div>
 
                     </form>
 
                     <div className="mt-6 grid grid-cols-3 items-center text-gray-400">
                         <hr className="border-gray-400" />
-                        <p className="text-center text-sm">OR</p>
+                        <p className="text-center text-sm">O</p>
                         <hr className="border-gray-400" />
                     </div>
 
@@ -95,12 +95,12 @@ const Login = () => {
                     </button>
 
                     <div className="mt-5 text-xs border-b-2 py-4 ">
-                        <Link to="/forgot/id" className="underline text-sm text-gray-400 hover:text-gray-900">Forgot your password?</Link>
+                        <Link to="/forgot/id" className="underline text-sm text-gray-400 hover:text-gray-900">olvidaste tu contraseña?</Link>
                     </div>
 
                     <div className="mt-3 text-sm flex justify-between items-center">
-                        <p>Don't have an account?</p>
-                        <Link to="/register" className="py-2 px-5 bg-gray-600 text-slate-300 border rounded-xl hover:scale-110 duration-300 hover:bg-gray-900 hover:text-white">Register</Link>
+                        <p>No tienes una cuenta?</p>
+                        <Link to="/register" className="py-2 px-5 bg-green-600 text-white border rounded-xl hover:scale-110 duration-300 hover:bg-green-900 hover:text-white">Registrate</Link>
 
                     </div>
 
