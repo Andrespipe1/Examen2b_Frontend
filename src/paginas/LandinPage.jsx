@@ -17,7 +17,7 @@ export const LandinPage = () => {
             <main className='bg-[#F5F5F5] px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
                 <section className='bg-[#F5F5F5] px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
                     <nav className='p-6 flex justify-between items-center'>
-                        <h1 className='text-3xl font-semibold text-green-600 dark:text-orange-400'>SALUDIFY</h1>
+                        <h1 className='text-3xl font-semibold bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent leading-none pb-1 dark:text-orange-400'>SALUDIFI</h1>
                         <ul className='flex items-center gap-6'>
                             <li>
                                 <img 
@@ -31,7 +31,9 @@ export const LandinPage = () => {
                     </nav>
 
                     <div className='text-center pt-16'>
-                        <h2 className='text-5xl font-bold text-green-600 mb-4 md:text-6xl dark:text-orange-400'>Transforma tu Salud con Tecnología</h2>
+                    <h2 className="text-5xl font-bold bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent leading-none pb-1 mb-4 md:text-6xl dark:text-orange-400 w-fit">
+                    TRANSFORMA TU SALUD CON TECNOLOGÍA</h2>
+
                         <h3 className='text-2xl text-gray-800 dark:text-gray-200 mb-6 md:text-3xl font-medium'>
                             Tu Compañero de Salud Personalizado
                         </h3>
@@ -43,7 +45,7 @@ export const LandinPage = () => {
 
                         <Link 
                             to="/login" 
-                            className='bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-green-500 hover:shadow-lg mt-6 inline-block dark:bg-orange-400 dark:hover:bg-orange-500'>
+                            className='bg-gradient-to-r from-green-400 to-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-green-500 hover:shadow-lg mt-6 inline-block dark:bg-orange-400 dark:hover:bg-orange-500'>
                             ¡Empieza ahora!
                         </Link>
                     </div>

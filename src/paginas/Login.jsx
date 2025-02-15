@@ -51,14 +51,14 @@ const Login = () => {
                 
                 <div className="md:w-4/5 sm:w-full">
                     {Object.keys(mensaje).length>0 && <Mensaje tipo={mensaje.tipo}>{mensaje.respuesta}</Mensaje>}
-                    <h1 className="text-3xl font-semibold mb-2 text-center uppercase  text-green-500">Bienvenido</h1>
+                    <h1 className="text-3xl font-semibold mb-2 text-center uppercase  bg-gradient-to-r from-green-400 to-blue-600 bg-clip-text text-transparent">Bienvenido</h1>
                     <small className="text-gray-400 block my-4 text-sm">Bienvenido de nuevo, ingresa tus credenciales</small>
 
 
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label className="mb-2 block text-sm font-semibold">Email</label>
-                            <input type="email" placeholder="Enter you email" 
+                            <input type="email" placeholder="Ingresa tu email" 
                             name='email'
                             value={form.email || ""} onChange={handleChange}
                             className="block w-full rounded-md border border-gray-300 focus:border-black-700 focus:outline-none focus:ring-1 focus:ring-black-900 py-1 px-2 text-gray-500" />
@@ -73,7 +73,7 @@ const Login = () => {
                         </div>
 
                         <div className="my-4">
-                            <button className="py-2 w-full block text-center bg-green-600 text-white border rounded-xl hover:scale-100 duration-300 hover:bg-green-700 hover:text-white">Login</button>
+                            <button className="py-2 w-full block text-center bg-gradient-to-r from-green-400 to-blue-600 text-white border rounded-xl hover:scale-105 duration-300">Login</button>
                         </div>
 
                     </form>
@@ -95,12 +95,12 @@ const Login = () => {
                     </button>
 
                     <div className="mt-5 text-xs border-b-2 py-4 ">
-                        <Link to="/forgot/id" className="underline text-sm text-gray-400 hover:text-gray-900">olvidaste tu contraseña?</Link>
+                        <Link to="/forgot/id" className="underline text-sm text-gray-400 hover:text-gray-900">Olvidaste tu contraseña?</Link>
                     </div>
 
                     <div className="mt-3 text-sm flex justify-between items-center">
                         <p>No tienes una cuenta?</p>
-                        <Link to="/register" className="py-2 px-5 bg-green-600 text-white border rounded-xl hover:scale-110 duration-300 hover:bg-green-900 hover:text-white">Registrate</Link>
+                        <Link to="/register" className="py-2 px-5 bg-gradient-to-r from-green-400 to-blue-600 text-white border rounded-xl hover:scale-110 duration-300 hover:bg-green-900 hover:text-white">Registrate</Link>
 
                     </div>
 
