@@ -34,7 +34,7 @@ export const Forgot = () => {
                     <Mensaje tipo={mensaje.tipo}>{mensaje.respuesta}</Mensaje>
                 )}
 
-                <h1 className="text-3xl font-semibold mb-2 text-center uppercase text-gray-500">
+                <h1 className="text-3xl font-semibold mb-2 text-center uppercase bg-gradient-to-r from-green-400 to-blue-600 bg-clip-text text-transparent">
                     Recupera tu contraseña
                 </h1>
                 <small className="text-red-700 block my-4 text-sm">
